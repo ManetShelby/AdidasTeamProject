@@ -30,77 +30,31 @@
         <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
         <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
     </ol>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <div class="container">
-                <div class="row p-5">
-                    <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                        <img class="img-fluid"
-                            src="asset/assets/img/Samba_OG_shoes_Black_JI2734_02_standard_hover_hover_hover.avif"
-                            alt="">
-                    </div>
-                    <div class="col-lg-6 mb-0 d-flex align-items-center">
-                        <div class="text-align-left align-self-center">
-                            <h1 class="h1 text-success"><b>Adidas</b> eCommerce</h1>
-                            <h3 class="h2">Animal Print Clothes & Shoes</h3>
-                            <p>
-                                ap into your wild side with animal print clothes and shoes from adidas. From sport
-                                performance apparel to day-off sneakers, it's all about eye-catching style.
-                                This template is 100% free provided by <a rel="sponsored" class="text-success"
-                                    href="https://templatemo.com" target="_blank">TemplateMo</a> website.
-                                Image credits go to <a rel="sponsored" class="text-success"
-                                    href="https://stories.freepik.com/" target="_blank">Freepik Stories</a>,
-                                <a rel="sponsored" class="text-success" href="https://unsplash.com/"
-                                    target="_blank">Unsplash</a> and
-                                <a rel="sponsored" class="text-success" href="https://icons8.com/" target="_blank">Icons
-                                    8</a>.
-                            </p>
+<div class="carousel-inner">
+    @for (item of Card; track $index) {
+    <div class="carousel-item active">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid"
+                                src="{{item.Image}}"
+                                alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left align-self-center">
+                                <h1 class="h1 text-success"><b>{{item.h1}}</b></h1>
+                                <h3 class="h2">{{item.h2}}</h3>
+                                <p>
+                                    {{item.p}}
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
+    
             </div>
-        </div>
-        <div class="carousel-item">
-            <div class="container">
-                <div class="row p-5">
-                    <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                        <img class="img-fluid"
-                            src="asset/assets/img/F50_Messi_Elite_Firm_Ground_Cleats_Blue_JP7435_HM1.avif" alt="">
-                    </div>
-                    <div class="col-lg-6 mb-0 d-flex align-items-center">
-                        <div class="text-align-left">
-                            <h1 class="h1">Soccer</h1>
-                            <h3 class="h2">F50 Messi Pro Firm Ground Cleats</h3>
-                            <p>
-                                Shop this and more select items with your adiClub discount voucher. Other promo codes
-                                will not apply to this product.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="container">
-                <div class="row p-5">
-                    <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                        <img class="img-fluid" src="asset/assets/img/Teamgeist_Cap_Black_JV9984_01_00_standard.avif"
-                            alt="">
-                    </div>
-                    <div class="col-lg-6 mb-0 d-flex align-items-center">
-                        <div class="text-align-left">
-                            <h1 class="h2">Teamgeist Cap</h1>
-                            <h3 class="h1">Women's Hats</h3>
-                            <p>
-                                Sun shade or style statement? You can have both browsing women's hats at adidas —
-                                whether you're a boonie fan, a trucker lover or a baseball cap
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        }
+    
     <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel"
         role="button" data-bs-slide="prev">
         <i class="fas fa-chevron-left"></i>
@@ -114,82 +68,56 @@
 
 
 <!-- Start Categories of The Month -->
+
 <section class="container py-5">
+    @for (item of Categories; track $index) {
     <div class="row text-center pt-3">
         <div class="col-lg-6 m-auto">
-            <h1 class="h1">Categories of The Month</h1>
+            <h1 class="h1">{{item.h1}}</h1>
             <p>
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
+                {{item.p}}
             </p>
         </div>
     </div>
+}
+<div class="carousel-inner">
+    @for (item of second_card; track $index) {
     <div class="row">
-            <div class="col-12 col-md-4 p-5 mt-3">
-                <a href="#"><img src="asset/assets/img/xcat_fw25_bts_tcc_evo_m_d_6b787a4366.avif"
-                        class="rounded-circle img-fluid border"></a>
-                <h2 class="text-center mt-3 mb-3">SPEED NEVER GOES OUT OF STYLE</h2>
-                <h5 class="text-center mt-3 mb-3">Explore Evo SL, the running shoe built for fast in all aspects of life.
-                </h5>
-                <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
-            </div>
-       
-
-        <div class="col-12 col-md-4 p-5 mt-3">
-            <a href="#"><img
-                    src="asset/assets/img/global_teamgeist_originals_fw25_launch_catlp_hp_navigation_card_teaser_1_d_6d10fc5ef9.avif"
-                    class="rounded-circle img-fluid border"></a>
-            <h2 class="text-center mt-3 mb-3">TEAMGEIST</h2>
-            <h5 class="text-center mt-3 mb-3">Heritage soccer recut for today.</h5>
-            <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
-        </div>
-        
-        <div class="col-12 col-md-4 p-5 mt-3">
-            <a href="#"><img src="asset/assets/img/xcat_fw25_bts_tcc_shoesunder80_mw_d_c283c4ad98.avif"
-                    class="rounded-circle img-fluid border"></a>
-            <h2 class="text-center mt-3 mb-3">$80 AND UNDER SCHOOL SHOES</h2>
-            <h5 class="text-center mt-3 mb-3">Get ahead of the class: Score classic sneakers for your first day fit.
+        <div class="col-12 col-md-4 p-5 mt-3 second_Card">
+            <a href="#"><img src="{{item.Image}}"class="rounded-circle img-fluid border"></a>
+            <h2 class="text-center mt-3 mb-3">{{item.h2}}</h2>
+            <h5 class="text-center mt-3 mb-3">{{item.h5}}
             </h5>
-            <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+            <p class="text-center"><a class="btn btn-success">{{item.p}}</a></p>
         </div>
     </div>
+    
+}
+</div>
 </section>
+
 <!-- End Categories of The Month -->
 
 
 <!-- Start Featured Product -->
 <section class="bg-light">
     <div class="container py-5">
+        @for (item of text; track $index) {
         <div class="row text-center py-3">
             <div class="col-lg-6 m-auto">
-                <h1 class="h1">Sneakers, Activewear and Sporting Goods</h1>
+                <h1 class="h1">{{item.h1}}</h1>
                 <p>
-                    Calling all athletes. Gear up for your favorite sport with adidas sneakers and activewear for men
-                    and women. From running to soccer and the gym to the trail, performance workout clothes and shoes
-                    keep you feeling your best. Find sport-specific sneakers to support your passion, and shop versatile
-                    activewear and accessories that support everyday comfort. adidas has you covered with world-class
-                    performance, quality and unmatched comfort to fit your style. Explore the full range of adidas gear
-                    today.
-
-                    Founded on performance, adidas sporting goods equipment supports athletes at all levels. Men, women
-                    and kids will find their best form in sneakers and activewear made to perform under pressure. adidas
-                    sportswear breathes, manages sweat and helps support working muscles. Explore sport-specific clothes
-                    and gear for basketball, soccer, or the yoga studio. Runners will find a range of sneakers for
-                    training, racing and trail runs. Gym users will find tops, tees and tanks that support focused
-                    efforts with adidas CLIMACOOL to feel cool and dry. Explore warm-ups featuring four-way stretch to
-                    support mobility. Find a new outdoor jacket that helps protect against wind and rain. Lace up new
-                    athletic shoes that energize every step with adidas Boost cushioning. With sizes and styles for all
-                    ages, we have sporting goods for the whole family. Dedicated training demands dedicated workout
-                    clothes. Experience the latest performance fabrics and sneaker technologies to get the most out of
-                    your next training session.
+                   {{item.p}}
                 </p>
             </div>
         </div>
+    }
+    @for ( item of four_card; track $index) {
         <div class="row">
             <div class="col-12 col-md-3 mb-4">
                 <div class="card h-100">
                     <a href="shop-single.html">
-                        <img src="asset/assets/img/edi_fw25_sambasizeguide_bnr_d_3_4126acc079.avif" class="card-img-top"
+                        <img src="{{item.Image}}" class="card-img-top"
                             with="50px">
                     </a>
                     <div class="card-body">
@@ -201,92 +129,18 @@
                                 <i class="text-muted fa fa-star"></i>
                                 <i class="text-muted fa fa-star"></i>
                             </li>
-                            <li class="text-muted text-right">$240.00</li>
+                            <li class="text-muted text-right">{{item.li}}</li>
                         </ul>
-                        <a href="shop-single.html" class="h2 text-decoration-none text-dark">The adidas Samba Size
-                            Guide</a>
-                        <p class="card-text">Tired of asking are Sambas true to size? Check out our official adidas
-                            Samba size chart for all you need to find your perfect Samba style and fit today.
-                        </p>
-                        <p class="text-muted">Reviews (24)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-3 mb-4">
-                <div class="card h-100">
-                    <a href="shop-single.html">
-                        <img src="asset/assets/img/Edi_SS_24_How_to_Style_a_Tennis_Skirt_mh_d_c09648994f.avif"
-                            class="card-img-top" with="50px">
-                    </a>
-                    <div class="card-body">
-                        <ul class="list-unstyled d-flex justify-content-between">
-                            <li>
-                                <i class="text-warning fa fa-star"></i>
-                                <i class="text-warning fa fa-star"></i>
-                                <i class="text-warning fa fa-star"></i>
-                                <i class="text-muted fa fa-star"></i>
-                                <i class="text-muted fa fa-star"></i>
-                            </li>
-                            <li class="text-muted text-right">$480.00</li>
-                        </ul>
-                        <a href="shop-single.html" class="h2 text-decoration-none text-dark">How To Lace Running Shoes</a>
+                        <a href="shop-single.html" class="h2 text-decoration-none text-dark">{{item.a}}</a>
                         <p class="card-text">
-                           Even the most comfortable running shoe can cause issues when you start racking up the miles. Luckily, the laces come in handy for more than just keeping your shoes tied. Learning how to lace running shoes in new ways can help alleviate chafing and blistering depending on your gait and foot width, so read on to troubleshoot your fit for the perfect run. 
+                            {{item.p1}}
                         </p>
-                        <p class="text-muted">Reviews (48)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-3 mb-4">
-                <div class="card h-100">
-                    <a href="shop-single.html">
-                        <img src="asset/assets/img/how_to_style_a_soccer_jersey_mh_d_215_1035532_5578c26900.avif" class="card-img-top" with="50px">
-                    </a>
-                    <div class="card-body">
-                        <ul class="list-unstyled d-flex justify-content-between">
-                            <li>
-                                <i class="text-warning fa fa-star"></i>
-                                <i class="text-warning fa fa-star"></i>
-                                <i class="text-warning fa fa-star"></i>
-                                <i class="text-warning fa fa-star"></i>
-                                <i class="text-warning fa fa-star"></i>
-                            </li>
-                            <li class="text-muted text-right">$360.00</li>
-                        </ul>
-                        <a href="shop-single.html" class="h2 text-decoration-none text-dark">How To Style A Soccer Jersey</a>
-                        <p class="card-text">
-                           The FIFA Women’s World Cup Australia & New Zealand kicks off this July, with 32 teams facing off on the biggest stage in the hopes of taking home the title. In anticipation of the monthlong tournament, take inspiration from these world-class athletes and pull one of their on-pitch essentials into your own wardrobe: the soccer jersey. Regardless of your personal style aesthetic.
-                           
-                        </p>
-                        <p class="text-muted">Reviews (74)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-3 mb-4">
-                <div class="card h-100">
-                    <a href="shop-single.html">
-                        <img src="asset/assets/img/how_to_do_a_lunge_mh_d_221_1036927_d975f2a9e6.avif" class="card-img-top" with="50px">
-                    </a>
-                    <div class="card-body">
-                        <ul class="list-unstyled d-flex justify-content-between">
-                            <li>
-                                <i class="text-warning fa fa-star"></i>
-                                <i class="text-warning fa fa-star"></i>
-                                <i class="text-warning fa fa-star"></i>
-                                <i class="text-warning fa fa-star"></i>
-                                <i class="text-warning fa fa-star"></i>
-                            </li>
-                            <li class="text-muted text-right">$360.00</li>
-                        </ul>
-                        <a href="shop-single.html" class="h2 text-decoration-none text-dark">Let's Lunge: How To Properly Do A Lunge</a>
-                        <p class="card-text">
-                            Lose yourself in the lunge. From the rhythmic unilateral and lateral movements to your heart beating stronger with each rep, lunges are a powerhouse compound exercise that activates several of the muscles in your lower body and core at once.
-                        </p>
-                        <p class="text-muted">Reviews (74)</p>
+                        <p class="text-muted">{{item.p2}}</p>
                     </div>
                 </div>
             </div>
         </div>
+    }
     </div>
 </section>
 <!-- End Featured Product -->
@@ -294,52 +148,25 @@
 <!-- Start Footer -->
 <footer class="bg-dark" id="tempaltemo_footer">
     <div class="container">
+        @for (item of Adidas_Shop; track $index) {
         <div class="row">
 
             <div class="col-md-4 pt-5">
-                <h2 class="h2 text-success border-bottom pb-3 border-light logo">Adidas Shop</h2>
+                <h2 class="h2 text-light border-bottom pb-3 border-light">{{item.h2}}</h2>
                 <ul class="list-unstyled text-light footer-link-list">
-                    <li>
-                        <i class="fas fa-map-marker-alt fa-fw"></i>
-                        123 Consectetur at ligula 10660
-                    </li>
-                    <li>
-                        <i class="fa fa-phone fa-fw"></i>
-                        <a class="text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-envelope fa-fw"></i>
-                        <a class="text-decoration-none" href="mailto:info@company.com">info@company.com</a>
-                    </li>
+                    <li><a class="text-decoration-none" href="#">{{item.li1}}</a></li>
+                    <li><a class="text-decoration-none" href="#">{{item.li2}}</a></li>
+                    <li><a class="text-decoration-none" href="#">{{item.li3}}</a></li>
+                    <li><a class="text-decoration-none" href="#">{{item.li5}}</a></li>
+                    <li><a class="text-decoration-none" href="#">{{item.li6}}</a></li>
+                    <li><a class="text-decoration-none" href="#">{{item.li7}}</a></li>
                 </ul>
             </div>
-
-            <div class="col-md-4 pt-5">
-                <h2 class="h2 text-light border-bottom pb-3 border-light">Products</h2>
-                <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none" href="#">Luxury</a></li>
-                    <li><a class="text-decoration-none" href="#">Sport Wear</a></li>
-                    <li><a class="text-decoration-none" href="#">Men's Shoes</a></li>
-                    <li><a class="text-decoration-none" href="#">Women's Shoes</a></li>
-                    <li><a class="text-decoration-none" href="#">Popular Dress</a></li>
-                    <li><a class="text-decoration-none" href="#">Gym Accessories</a></li>
-                    <li><a class="text-decoration-none" href="#">Sport Shoes</a></li>
-                </ul>
-            </div>
-
-            <div class="col-md-4 pt-5">
-                <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
-                <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none" href="#">Home</a></li>
-                    <li><a class="text-decoration-none" href="#">About Us</a></li>
-                    <li><a class="text-decoration-none" href="#">Shop Locations</a></li>
-                    <li><a class="text-decoration-none" href="#">FAQs</a></li>
-                    <li><a class="text-decoration-none" href="#">Contact</a></li>
-                </ul>
-            </div>
-
+            
         </div>
+    }
 
+    @for (item of icon; track $index) {
         <div class="row text-light mb-4">
             <div class="col-12 mb-3">
                 <div class="w-100 my-3 border-top border-light"></div>
@@ -364,29 +191,31 @@
                     </li>
                 </ul>
             </div>
+
             <div class="col-auto">
-                <label class="sr-only" for="subscribeEmail">Email address</label>
+                <label class="sr-only" for="subscribeEmail">{{item.label}}</label>
                 <div class="input-group mb-2">
                     <input type="text" class="form-control bg-dark border-light" id="subscribeEmail"
                         placeholder="Email address">
-                    <div class="input-group-text btn-success text-light">Subscribe</div>
+                    <div class="input-group-text btn-success text-light">{{item.div}}</div>
                 </div>
             </div>
         </div>
-    </div>
+    }
+</div>
 
-    <div class="w-100 bg-black py-3">
-        <div class="container">
-            <div class="row pt-2">
-                <div class="col-12">
-                    <p class="text-left text-light">
-                        Copyright &copy; 2021 Company Name
-                        | Designed by <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a>
-                    </p>
-                </div>
+<div class="w-100 bg-dark py-3">
+    <div class="container">
+        <div class="row pt-2">
+            <div class="col-12">
+                <p class="text-left text-light">
+                    Copyright &copy; 2021 Company Name
+                    | Designed by <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a>
+                </p>
             </div>
         </div>
     </div>
+</div>
 
 </footer>
 <!-- End Footer -->
