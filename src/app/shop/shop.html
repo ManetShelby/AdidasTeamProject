@@ -20,39 +20,39 @@
     <!-- Start Content -->
     <div class="container py-5">
         <div class="row">
-
+            @for (item of Categories; track $index) {
             <div class="col-lg-3">
-                <h1 class="h2 pb-4">Categories</h1>
+                <h1 class="h2 pb-4">{{item.h1}}</h1>
                 <ul class="list-unstyled templatemo-accordion">
                     <li class="pb-3">
                         <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
-                            Gender
+                            {{item.a}}
                             <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
                         </a>
                         <ul class="collapse show list-unstyled pl-3">
-                            <li><a class="text-decoration-none" href="#">Men</a></li>
-                            <li><a class="text-decoration-none" href="#">Women</a></li>
+                            <li><a class="text-decoration-none" href="#">{{item.li1}}</a></li>
+                            <li><a class="text-decoration-none" href="#">{{item.li2}}</a></li>
                         </ul>
                     </li>
                     <li class="pb-3">
                         <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
-                            Sale
+                            {{item.a2}}
                             <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
                         </a>
                         <ul id="collapseTwo" class="collapse list-unstyled pl-3">
-                            <li><a class="text-decoration-none" href="#">Sport</a></li>
-                            <li><a class="text-decoration-none" href="#">Luxury</a></li>
+                            <li><a class="text-decoration-none" href="#">{{item.li3}}</a></li>
+                            <li><a class="text-decoration-none" href="#">{{item.li4}}</a></li>
                         </ul>
                     </li>
                     <li class="pb-3">
                         <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
-                            Product
+                            {{item.a3}}
                             <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
                         </a>
                         <ul id="collapseThree" class="collapse list-unstyled pl-3">
-                            <li><a class="text-decoration-none" href="#">Bag</a></li>
-                            <li><a class="text-decoration-none" href="#">Sweather</a></li>
-                            <li><a class="text-decoration-none" href="#">Sunglass</a></li>
+                            <li><a class="text-decoration-none" href="#">{{item.li5}}</a></li>
+                            <li><a class="text-decoration-none" href="#">{{item.li6}}</a></li>
+                            <li><a class="text-decoration-none" href="#">{{item.li7}}</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -63,28 +63,28 @@
                     <div class="col-md-6">
                         <ul class="list-inline shop-top-menu pb-3 pt-1">
                             <li class="list-inline-item">
-                                <a class="h3 text-dark text-decoration-none mr-3" href="#">All</a>
+                                <a class="h3 text-dark text-decoration-none mr-3" href="#">{{item.li8}}</a>
                             </li>
                             <li class="list-inline-item">
-                                <a class="h3 text-dark text-decoration-none mr-3" href="#">Men's</a>
+                                <a class="h3 text-dark text-decoration-none mr-3" href="#">{{item.li9}}</a>
                             </li>
                             <li class="list-inline-item">
-                                <a class="h3 text-dark text-decoration-none" href="#">Women's</a>
+                                <a class="h3 text-dark text-decoration-none" href="#">{{item.li10}}</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-md-6 pb-4">
                         <div class="d-flex">
                             <select class="form-control">
-                                <option>Featured</option>
-                                <option>A to Z</option>
-                                <option>Item</option>
+                                <option>{{item.option1}}</option>
+                                <option>{{item.option2}}</option>
+                                <option>{{item.option3}}</option>
                             </select>
                         </div>
                     </div>
                 </div>
-                @for (item of card; track $index) {
                 <div class="row">
+                    @for (item of card; track $index) {
                     <div class="col-md-4">
                         <div class="card mb-4 product-wap rounded-0">
                             <div class="card rounded-0">
@@ -123,23 +123,24 @@
                         </div>
                     </div>
 
+                }
                 </div>
-            }
                 <div div="row">
                     <ul class="pagination pagination-lg justify-content-end">
                         <li class="page-item disabled">
-                            <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0" href="#" tabindex="-1">1</a>
+                            <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0" href="#" tabindex="-1">{{item.Number1}}</a>
                         </li>
                         <li class="page-item">
-                            <a class="page-link rounded-0 mr-3 shadow-sm border-top-0 border-left-0 text-dark" href="#">2</a>
+                            <a class="page-link rounded-0 mr-3 shadow-sm border-top-0 border-left-0 text-dark" href="#">{{item.Number2}}</a>
                         </li>
                         <li class="page-item">
-                            <a class="page-link rounded-0 shadow-sm border-top-0 border-left-0 text-dark" href="#">3</a>
+                            <a class="page-link rounded-0 shadow-sm border-top-0 border-left-0 text-dark" href="#">{{item.Number3}}</a>
                         </li>
                     </ul>
                 </div>
             </div>
 
+        }
         </div>
     </div>
     <!-- End Content -->
@@ -253,8 +254,8 @@
     <!-- Start Footer -->
     <footer class="bg-dark" id="tempaltemo_footer">
         <div class="container">
+            <div class="row">
             @for (item of Adidas_Shop; track $index) {
-        <div class="row">
 
             <div class="col-md-4 pt-5">
                 <h2 class="h2 text-light border-bottom pb-3 border-light">{{item.h2}}</h2>
@@ -268,8 +269,8 @@
                 </ul>
             </div>
             
+        }
         </div>
-    }
 
     @for (item of icon; track $index) {
         <div class="row text-light mb-4">

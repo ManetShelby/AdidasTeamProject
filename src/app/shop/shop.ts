@@ -128,4 +128,29 @@ card=[
     p:'$250.00'
   },
 ]
+
+Categories=[
+  {
+    h1:'Categories',
+    a:'Gender',
+    li1:'Men',
+    li2:'Women',
+    a2:'Sale',
+    li3:'Sport',
+    li4:'Luxury',
+    a3:'Product',
+    li5:'Bag',
+    li6:'Sweather',
+    li7:'Sunglass',
+    li8:'All',
+    li9:'Men',
+    li10:'Womens',
+    option1:'Featured',
+    option2:'A to Z',
+    option3:'Item',
+    Number1:'1',
+    Number2:'2',
+    Number3:'3',
+  }
+]
 }

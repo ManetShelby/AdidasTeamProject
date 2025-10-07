@@ -72,22 +72,21 @@
                 <div class="row">
                     @for (item of button1; track $index) {
                     <h1 class="font">{{item.h1}}</h1>
-                    <div></div><br>
                     <div class="form-group col-md-6 mb-3">
                         <button class="cta"><span class="hover-underline-animation">{{item.b1}}</span></button><br>
                         <button class="cta"><span class="hover-underline-animation">{{item.b2}}</span></button><br>
                         <button class="cta"><span
                                 class="hover-underline-animation">{{item.b3}}</span></button><br>
                     </div>
-                }
-                @for (item of button2; track $index) {
+                    
                     <div class="form-group col-md-6 mb-3">
-                         <button class="cta"><span class="hover-underline-animation">{{item.b1}}</span></button><br>
+                        <button class="cta"><span class="hover-underline-animation">{{item.b1}}</span></button><br>
                         <button class="cta"><span class="hover-underline-animation">{{item.b2}}</span></button><br>
                         <button class="cta"><span
-                                class="hover-underline-animation">{{item.b3}}</span></button><br>
-                    </div>
-                }
+                            class="hover-underline-animation">{{item.b3}}</span></button><br>
+                        </div>
+                    }
+        
                 </div>
 
 
@@ -250,8 +249,8 @@
     <!-- Start Footer -->
     <footer class="bg-dark" id="tempaltemo_footer">
         <div class="container">
+            <div class="row">
             @for (item of Adidas_Shop; track $index) {
-        <div class="row">
 
             <div class="col-md-4 pt-5">
                 <h2 class="h2 text-light border-bottom pb-3 border-light">{{item.h2}}</h2>
@@ -265,8 +264,8 @@
                 </ul>
             </div>
             
+        }
         </div>
-    }
 
     @for (item of icon; track $index) {
         <div class="row text-light mb-4">

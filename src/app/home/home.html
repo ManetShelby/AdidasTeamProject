@@ -113,8 +113,8 @@
             </div>
         </div>
     }
-    @for ( item of four_card; track $index) {
-        <div class="row">
+    <div class="row">
+            @for ( item of four_card; track $index) {
             <div class="col-12 col-md-3 mb-4">
                 <div class="card h-100">
                     <a href="shop-single.html">
@@ -140,8 +140,8 @@
                     </div>
                 </div>
             </div>
+        }
         </div>
-    }
     </div>
 </section>
 <!-- End Featured Product -->
@@ -149,8 +149,8 @@
 <!-- Start Footer -->
 <footer class="bg-dark" id="tempaltemo_footer">
     <div class="container">
-        @for (item of Adidas_Shop; track $index) {
         <div class="row">
+            @for (item of Adidas_Shop; track $index) {
 
             <div class="col-md-4 pt-5">
                 <h2 class="h2 text-light border-bottom pb-3 border-light">{{item.h2}}</h2>
@@ -164,8 +164,8 @@
                 </ul>
             </div>
             
+        }
         </div>
-    }
 
     @for (item of icon; track $index) {
         <div class="row text-light mb-4">
