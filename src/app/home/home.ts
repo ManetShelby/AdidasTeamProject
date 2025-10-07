@@ -18,7 +18,7 @@ export class Home {
   Card=[
     {
       //thrid card
-      h1 : 'Teamgeist Cap',
+      h1 : '<b>Adidas</b> eCommerce',
       h2 : 'Animal Print Clothes & Shoes',
       p : " Sun shade or style statement? You can have both browsing women's hats at adidas — whether you're a boonie fan, a trucker lover or a baseball cap",
       Image : 'asset/assets/img/Teamgeist_Cap_Black_JV9984_01_00_standard.avif'

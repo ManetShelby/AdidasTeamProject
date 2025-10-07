@@ -25,36 +25,43 @@
 
 <!-- Start Banner Hero -->
 <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
-        <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
-        <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
-    </ol>
+      <ol class="carousel-indicators">
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
+        </ol>
 <div class="carousel-inner">
-    @for (item of Card; track $index) {
-    <div class="carousel-item active">
-                <div class="container">
-                    <div class="row p-5">
-                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid"
-                                src="{{item.Image}}"
-                                alt="">
-                        </div>
-                        <div class="col-lg-6 mb-0 d-flex align-items-center">
-                            <div class="text-align-left align-self-center">
-                                <h1 class="h1 text-success"><b>{{item.h1}}</b></h1>
-                                <h3 class="h2">{{item.h2}}</h3>
-                                <p>
+    @for (item of Card; let i = $index; track $index) {
+        <div class="carousel-item{{i === 0 ? ' active' : ''}}">
+            <div class="container">
+                <div class="row p-5">
+                    <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                        <img class="img-fluid"
+                            src="{{item.Image}}"
+                            alt="">
+                    </div>
+                    <div class="col-lg-6 mb-0 d-flex align-items-center">
+                        <div class="text-align-left align-self-center">
+                            <h1 class="h1 text-success"><b>Adidas</b> eCommerce</h1>
+                            <h3 class="h2">Animal Print Clothes & Shoes</h3>
+                            <p>
+                                <span>
                                     {{item.p}}
-                                </p>
-                            </div>
+                                </span> <a rel="sponsored" class="text-success"
+                                    href="https://templatemo.com" target="_blank">TemplateMo</a> website.
+                                Image credits go to <a rel="sponsored" class="text-success"
+                                    href="https://stories.freepik.com/" target="_blank">Freepik Stories</a>,
+                                <a rel="sponsored" class="text-success" href="https://unsplash.com/"
+                                    target="_blank">Unsplash</a> and
+                                <a rel="sponsored" class="text-success" href="https://icons8.com/" target="_blank">Icons
+                                    8</a>.
+                            </p>
                         </div>
                     </div>
                 </div>
-    
             </div>
-        }
-    
+        </div>
+    }
     <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel"
         role="button" data-bs-slide="prev">
         <i class="fas fa-chevron-left"></i>
@@ -69,32 +76,26 @@
 
 <!-- Start Categories of The Month -->
 
-<section class="container py-5">
-    @for (item of Categories; track $index) {
-    <div class="row text-center pt-3">
-        <div class="col-lg-6 m-auto">
-            <h1 class="h1">{{item.h1}}</h1>
-            <p>
-                {{item.p}}
-            </p>
+ <section class="container py-5">
+        <div class="row text-center pt-3">
+            <div class="col-lg-6 m-auto">
+                <h1 class="h1">Categories of The Month</h1>
+                <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                </p>
+            </div>
         </div>
-    </div>
-}
-<div class="carousel-inner">
-    @for (item of second_card; track $index) {
-    <div class="row">
-        <div class="col-12 col-md-4 p-5 mt-3 second_Card">
-            <a href="#"><img src="{{item.Image}}"class="rounded-circle img-fluid border"></a>
-            <h2 class="text-center mt-3 mb-3">{{item.h2}}</h2>
-            <h5 class="text-center mt-3 mb-3">{{item.h5}}
-            </h5>
-            <p class="text-center"><a class="btn btn-success">{{item.p}}</a></p>
+        <div class="row">
+            @for (item of second_card; track $index) {
+            <div class="col-12 col-md-4 p-5 mt-3">
+                <a href="#"><img src="{{item.Image}}" class="rounded-circle img-fluid border"></a>
+                <h5 class="text-center mt-3 mb-3">Watches</h5>
+                <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+            </div>
+        }
         </div>
-    </div>
-    
-}
-</div>
-</section>
+    </section>
 
 <!-- End Categories of The Month -->
 
