@@ -17,11 +17,11 @@ export class Home {
 
   Card=[
     {
-      //first card
-      h1 : 'Adidas eCommerce',
+      //thrid card
+      h1 : 'Teamgeist Cap',
       h2 : 'Animal Print Clothes & Shoes',
-      p : " ap into your wild side with animal print clothes and shoes from adidas. From sport performance apparel to day-off sneakers, it is all about eye-catching style. This template is 100% free provided by TemplateMo website.",
-      Image : 'asset/assets/img/Samba_OG_shoes_Black_JI2734_02_standard_hover_hover_hover.avif'
+      p : " Sun shade or style statement? You can have both browsing women's hats at adidas — whether you're a boonie fan, a trucker lover or a baseball cap",
+      Image : 'asset/assets/img/Teamgeist_Cap_Black_JV9984_01_00_standard.avif'
     },
     {
       //second  card
@@ -31,12 +31,12 @@ export class Home {
       Image : 'asset/assets/img/F50_Messi_Elite_Firm_Ground_Cleats_Blue_JP7435_HM1.avif'
     },
     {
-      //thrid card
-      h1 : 'Teamgeist Cap',
+      //first card
+      h1 : 'Adidas eCommerce',
       h2 : 'Animal Print Clothes & Shoes',
-      p : " Sun shade or style statement? You can have both browsing women's hats at adidas — whether you're a boonie fan, a trucker lover or a baseball cap",
-      Image : 'asset/assets/img/Teamgeist_Cap_Black_JV9984_01_00_standard.avif'
-    }
+      p : " ap into your wild side with animal print clothes and shoes from adidas. From sport performance apparel to day-off sneakers, it is all about eye-catching style. This template is 100% free provided by TemplateMo website.",
+      Image : 'asset/assets/img/Samba_OG_shoes_Black_JI2734_02_standard_hover_hover_hover.avif'
+    },
   ]
 
   second_card=[
