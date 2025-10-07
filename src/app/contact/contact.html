@@ -20,143 +20,121 @@
 
 
     <!-- Start Content Page -->
+    @for (item of contact; track $index) {
     <div class="container-fluid bg-light py-5">
         <div class="col-md-6 m-auto text-center">
-            <h1 class="h1">Contact Us</h1>
+            <h1 class="h1">{{item.h1}}</h1>
             <p>
-                Proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                Lorem ipsum dolor sit amet.
+                {{item.p}}
             </p>
         </div>
     </div>
+}
 
     <!-- Start Contact -->
+     @for (item of form; track $index) {
     <div class="container py-5">
         <div class="row py-5">
             <form class="col-md-9 m-auto" method="post" role="form">
                 <div class="row">
                     <div class="form-group col-md-6 mb-3">
-                        <label for="inputname">Name</label>
+                        <label for="inputname">{{item.Name}}</label>
                         <input type="text" class="form-control mt-1" id="name" name="name" placeholder="Name">
                     </div>
                     <div class="form-group col-md-6 mb-3">
-                        <label for="inputemail">Email</label>
+                        <label for="inputemail">{{item.Email}}</label>
                         <input type="email" class="form-control mt-1" id="email" name="email" placeholder="Email">
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="inputsubject">Subject</label>
+                    <label for="inputsubject">{{item.Subject}}</label>
                     <input type="text" class="form-control mt-1" id="subject" name="subject" placeholder="Subject">
                 </div>
                 <div class="mb-3">
-                    <label for="inputmessage">Message</label>
+                    <label for="inputmessage">{{item.Message}}</label>
                     <textarea class="form-control mt-1" id="message" name="message" placeholder="Message"
                         rows="8"></textarea>
                 </div>
                 <div class="row">
                     <div class="col text-end mt-2">
-                        <button type="submit" class="btn btn-success btn-lg px-3">Let’s Talk</button>
+                        <button type="submit" class="btn btn-success btn-lg px-3">{{item.Talk}}</button>
                     </div>
                 </div>
             </form>
         </div>
     </div>
+}
 
-    <div class="container py-5">
+<div class="container py-5">
+        @for (item of contact; track $index) {
         <div class="row">
             <div>
-                <h1 class="font">Contact</h1><br>
+                <h1 class="font">{{item.h1}}</h1><br>
                 <div class="mb-3">
-                    <h3 class="font">About</h3><br>
-                    <p class="font">You can find our switchboard number below. Please scroll down to contact the
-                        responsible team for
-                        more
-                        specific questions.</p>
+                    <h3 class="font">{{item.h3}}</h3><br>
+                    <p class="font">{{item.p}}</p>
                 </div>
             </div>
         </div><br>
+    }
+    @for (item of contact2; track $index) {
         <div>
-            <h1 class="font">ADIDAS AG</h1><br>
+            <h1 class="font">{{item.h1}}</h1><br>
             <div class="mb-5">
                 <div></div>
-                <p>World of Sports</p>
-                <p>Adi-Dassler-Straße 1</p>
-                <p>91074 Herzogenaurach</p>
-                <p>Germany</p><br>
-                <a href="#" class="number">phone: +49 9132 84 0</a>
+                <p>{{item.p}}</p>
+                <p>{{item.p2}}</p>
+                <p>{{item.p3}}</p>
+                <p>{{item.p4}}</p><br>
+                <a href="#" class="number">{{item.a}}</a>
             </div>
         </div><br>
-
+    }
+        @for (item of Card; track $index) {
         <div>
             <div class="customer-service">
-                <div class="customer-service h2">Customer Service</div>
-                <p class="customer-service p">Do you have questions about our products or your order? Our customer
-                    hotline can
-                    help.</p>
-                <div class="form-container"><button class="form-submit-btn" type="submit">adidas.com/help</button></div>
+                <div class="customer-service h2">{{item.h2}}</div>
+                <p class="customer-service p">{{item.p}}</p>
+                <div class="form-container"><button class="form-submit-btn" type="submit">{{item.div}}</button></div>
             </div>
         </div><br>
+    }
 
+    @for ( item of contact4; track $index) {
         <div><br>
-            <h1 class="font">Media Contact</h1><br>
+            <h1 class="font">{{item.h1}}</h1><br>
             <div class="mb-5">
-                <h3 class="font">adidas AG Media Relations</h3><br>
-                <p>World of Sports</p>
-                <p>Adi-Dassler-Straße 1</p>
-                <p>91074 Herzogenaurach</p>
-                <p>Germany</p>
+                <h3 class="font">{{item.h3}}</h3><br>
+                <p>{{item.p}}</p>
+                <p>{{item.p2}}</p>
+                <p>{{item.p3}}</p>
+                <p>{{item.p4}}</p>
             </div>
-            <button class="cta"><span class="hover-underline-animation">Send an Email</span></button><br>
-            <button class="cta"><span class="hover-underline-animation">Our Team</span></button><br>
+            <button class="cta"><span class="hover-underline-animation">{{item.button1}}</span></button><br>
+            <button class="cta"><span class="hover-underline-animation">{{item.button2}}</span></button><br>
         </div><br>
-
-        <div>
-            <h1 class="font">Investor Relations Contact</h1>
-            <div class="mb-5"><br>
-                <h3 class="font">adidas AG Media Relations</h3><br>
-                <p>World of Sports</p>
-                <p>Adi-Dassler-Straße 1</p>
-                <p>91074 Herzogenaurach</p>
-                <p>Germany</p>
-            </div>
-            <button class="cta"><span class="hover-underline-animation">Send an Email</span></button><br>
-            <button class="cta"><span class="hover-underline-animation">Our Team</span></button><br>
-        </div>
-
-        <div><br>
-            <div class="mb-3">
-                <h1 class="font">Sustainability Contact</h1>
-            </div>
-            <div class="mb-5">
-                <h3 class="font">adidas AG Social & Environmental Affairs</h3><br>
-                <p>World of Sports</p>
-                <p>Adi-Dassler-Straße 1</p>
-                <p>91074 Herzogenaurach</p>
-                <p>Germany</p>
-            </div>
-            <button class="cta"><span class="hover-underline-animation">Send an Email</span></button><br>
-        </div>
-
+    }
         <div class="container py-5">
             <div class="row py-5">
-
                 <div class="row">
-                    <h1 class="font">Popular</h1>
+                    @for (item of button1; track $index) {
+                    <h1 class="font">{{item.h1}}</h1>
                     <div></div><br>
                     <div class="form-group col-md-6 mb-3">
-                        <button class="cta"><span class="hover-underline-animation">Profile</span></button><br>
-                        <button class="cta"><span class="hover-underline-animation">Financial
-                                Calendar</span></button><br>
+                        <button class="cta"><span class="hover-underline-animation">{{item.b1}}</span></button><br>
+                        <button class="cta"><span class="hover-underline-animation">{{item.b2}}</span></button><br>
                         <button class="cta"><span
-                                class="hover-underline-animation">careers.adidas-group.com</span></button><br>
+                                class="hover-underline-animation">{{item.b3}}</span></button><br>
                     </div>
+                }
+                @for (item of button2; track $index) {
                     <div class="form-group col-md-6 mb-3">
-                        <button class="cta"><span class="hover-underline-animation">Financial
-                                Publications</span></button><br>
-                        <button class="cta"><span class="hover-underline-animation">Press Releases</span></button><br>
+                         <button class="cta"><span class="hover-underline-animation">{{item.b1}}</span></button><br>
+                        <button class="cta"><span class="hover-underline-animation">{{item.b2}}</span></button><br>
                         <button class="cta"><span
-                                class="hover-underline-animation">report.adidas-group.com</span></button><br>
+                                class="hover-underline-animation">{{item.b3}}</span></button><br>
                     </div>
+                }
                 </div>
 
 
@@ -174,100 +152,74 @@
     <!-- Start Footer -->
     <footer class="bg-dark" id="tempaltemo_footer">
         <div class="container">
-            <div class="row">
+            @for (item of Adidas_Shop; track $index) {
+        <div class="row">
 
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Adidas Shop</h2>
-                    <ul class="list-unstyled text-light footer-link-list">
-                        <li>
-                            <i class="fas fa-map-marker-alt fa-fw"></i>
-                            123 Consectetur at ligula 10660
-                        </li>
-                        <li>
-                            <i class="fa fa-phone fa-fw"></i>
-                            <a class="text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-envelope fa-fw"></i>
-                            <a class="text-decoration-none" href="mailto:info@company.com">info@company.com</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="col-md-4 pt-5">
+                <h2 class="h2 text-light border-bottom pb-3 border-light">{{item.h2}}</h2>
+                <ul class="list-unstyled text-light footer-link-list">
+                    <li><a class="text-decoration-none" href="#">{{item.li1}}</a></li>
+                    <li><a class="text-decoration-none" href="#">{{item.li2}}</a></li>
+                    <li><a class="text-decoration-none" href="#">{{item.li3}}</a></li>
+                    <li><a class="text-decoration-none" href="#">{{item.li5}}</a></li>
+                    <li><a class="text-decoration-none" href="#">{{item.li6}}</a></li>
+                    <li><a class="text-decoration-none" href="#">{{item.li7}}</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    }
 
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">Products</h2>
-                    <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">Luxury</a></li>
-                        <li><a class="text-decoration-none" href="#">Sport Wear</a></li>
-                        <li><a class="text-decoration-none" href="#">Men's Shoes</a></li>
-                        <li><a class="text-decoration-none" href="#">Women's Shoes</a></li>
-                        <li><a class="text-decoration-none" href="#">Popular Dress</a></li>
-                        <li><a class="text-decoration-none" href="#">Gym Accessories</a></li>
-                        <li><a class="text-decoration-none" href="#">Sport Shoes</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
-                    <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">Home</a></li>
-                        <li><a class="text-decoration-none" href="#">About Us</a></li>
-                        <li><a class="text-decoration-none" href="#">Shop Locations</a></li>
-                        <li><a class="text-decoration-none" href="#">FAQs</a></li>
-                        <li><a class="text-decoration-none" href="#">Contact</a></li>
-                    </ul>
-                </div>
-
+    @for (item of icon; track $index) {
+        <div class="row text-light mb-4">
+            <div class="col-12 mb-3">
+                <div class="w-100 my-3 border-top border-light"></div>
+            </div>
+            <div class="col-auto me-auto">
+                <ul class="list-inline text-left footer-icons">
+                    <li class="list-inline-item border border-light rounded-circle text-center">
+                        <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i
+                                class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                    </li>
+                    <li class="list-inline-item border border-light rounded-circle text-center">
+                        <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/"><i
+                                class="fab fa-instagram fa-lg fa-fw"></i></a>
+                    </li>
+                    <li class="list-inline-item border border-light rounded-circle text-center">
+                        <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i
+                                class="fab fa-twitter fa-lg fa-fw"></i></a>
+                    </li>
+                    <li class="list-inline-item border border-light rounded-circle text-center">
+                        <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i
+                                class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                    </li>
+                </ul>
             </div>
 
-            <div class="row text-light mb-4">
-                <div class="col-12 mb-3">
-                    <div class="w-100 my-3 border-top border-light"></div>
-                </div>
-                <div class="col-auto me-auto">
-                    <ul class="list-inline text-left footer-icons">
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i
-                                    class="fab fa-facebook-f fa-lg fa-fw"></i></a>
-                        </li>
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank"
-                                href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
-                        </li>
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i
-                                    class="fab fa-twitter fa-lg fa-fw"></i></a>
-                        </li>
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank"
-                                href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-auto">
-                    <label class="sr-only" for="subscribeEmail">Email address</label>
-                    <div class="input-group mb-2">
-                        <input type="text" class="form-control bg-dark border-light" id="subscribeEmail"
-                            placeholder="Email address">
-                        <div class="input-group-text btn-success text-light">Subscribe</div>
-                    </div>
+            <div class="col-auto">
+                <label class="sr-only" for="subscribeEmail">{{item.label}}</label>
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control bg-dark border-light" id="subscribeEmail"
+                        placeholder="Email address">
+                    <div class="input-group-text btn-success text-light">{{item.div}}</div>
                 </div>
             </div>
         </div>
+    }
+</div>
 
-        <div class="w-100 bg-black py-3">
-            <div class="container">
-                <div class="row pt-2">
-                    <div class="col-12">
-                        <p class="text-left text-light">
-                            Copyright &copy; 2021 Company Name
-                            | Designed by <a rel="sponsored" href="https://templatemo.com"
-                                target="_blank">TemplateMo</a>
-                        </p>
-                    </div>
-                </div>
+<div class="w-100 bg-dark py-3">
+    <div class="container">
+        <div class="row pt-2">
+            <div class="col-12">
+                <p class="text-left text-light">
+                    Copyright &copy; 2021 Company Name
+                    | Designed by <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a>
+                </p>
             </div>
         </div>
+    </div>
+</div>
 
     </footer>
     <!-- End Footer -->

@@ -4,12 +4,14 @@
     <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block fixed-top" id="templatemo_nav_top">
         <div class="container text-light fixed-top">
             <div class="w-100 d-flex justify-content-between">
+                @for (item of info; track $index) {
                 <div>
                     <i class="fa fa-envelope mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com">info@company.com</a>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com">{{item.a1}}</a>
                     <i class="fa fa-phone mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340">{{item.a2}}</a>
                 </div>
+            }
                 <div>
                     <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
                     <a class="text-light" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
@@ -35,22 +37,24 @@
             </button>
 
             <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+                @for (item of Header; track $index) {
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
-                            <a routerLink="/home" class="nav-link">Home</a>
+                            <a routerLink="/home" class="nav-link">{{item.Home}}</a>
                         </li>
                         <li class="nav-item">
-                            <a routerLink="/about" class="nav-link">About</a>
+                            <a routerLink="/about" class="nav-link">{{item.About}}</a>
                         </li>
                         <li class="nav-item">
-                            <a routerLink="/shop" class="nav-link">Shop</a>
+                            <a routerLink="/shop" class="nav-link">{{item.Shop}}</a>
                         </li>
                         <li class="nav-item">
-                            <a routerLink="/contact" class="nav-link">Contact</a>
+                            <a routerLink="/contact" class="nav-link">{{item.Contact}}</a>
                         </li>
                     </ul>
                 </div>
+            }
                 <div class="navbar align-self-center d-flex">
                     <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
                         <div class="input-group">

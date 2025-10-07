@@ -1,0 +1,8 @@
+.second_Card {
+    display: block;
+    overflow: hidden;
+    /* display: flex; */
+    justify-content:right;
+    align-items: center;
+
+}
