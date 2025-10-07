@@ -3,6 +3,7 @@ import { Home } from './home/home';
 import { About } from './about/about';
 import { Shop } from './shop/shop';
 import { Contact } from './contact/contact';
+import { Singleshop } from './singleshop/singleshop';
 
 export const routes: Routes = [
 
@@ -11,4 +12,5 @@ export const routes: Routes = [
     {path:'about',component:About},
     {path:'shop',component:Shop},
     {path:'contact',component:Contact},
+    {path:'singleshop',component:Singleshop}
 ];
