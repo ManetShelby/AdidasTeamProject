@@ -1,6 +1,6 @@
 
     <!-- Start Top Nav -->
-         <link rel="stylesheet" href="/styles.css">
+
     <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block fixed-top" id="templatemo_nav_top">
         <div class="container text-light fixed-top">
             <div class="w-100 d-flex justify-content-between">
@@ -37,24 +37,23 @@
             </button>
 
             <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
-                @for (item of Header; track $index) {
+    
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
-                            <a routerLink="home" routerLinkActive="active" class="nav-link">{{item.Home}}</a>
+                            <a routerLink="home" routerLinkActive="active" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a routerLink="about" routerLinkActive="active" class="nav-link">{{item.About}}</a>
+                            <a routerLink="about" routerLinkActive="active" class="nav-link">About</a>
                         </li>
                         <li class="nav-item">
-                            <a routerLink="shop" routerLinkActive="active" class="nav-link">{{item.Shop}}</a>
+                            <a routerLink="shop" routerLinkActive="active" class="nav-link">Shop</a>
                         </li>
                         <li class="nav-item">
-                            <a routerLink="contact" routerLinkActive="active" class="nav-link">{{item.Contact}}</a>
+                            <a routerLink="contact" routerLinkActive="active" class="nav-link">Contact</a>
                         </li>
                     </ul>
                 </div>
-            }
                 <div class="navbar align-self-center d-flex">
                     <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
                         <div class="input-group">

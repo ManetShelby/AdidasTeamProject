@@ -9,15 +9,6 @@ import { RouterLink, RouterLinkActive, RouterModule, RouterOutlet } from '@angul
 })
 export class App {
   protected title = 'Adidas';
-  Header=[
-    {
-      Home:'Home',
-      About :'About',
-      Shop:'Shop',
-      Contact:'Contact',
-
-    }
-  ]
 
   info=[
     {
